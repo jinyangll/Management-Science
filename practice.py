@@ -15,7 +15,7 @@ all_indices = [(i, j, k, l, m)
                for i in I 
                for j in J 
                for k in K 
-               for l in L 
+               for l in L
                for m in M]
 
 print(f"생성된 인덱스 튜플의 총 개수: {len(all_indices)}개")
@@ -31,12 +31,18 @@ print(x)
 
 print(type(x[1, 1, 1, 1, 2]))
 # <class 'docplex.mp.dvar.Var'>
-
+#호출하는법
+a = [x[i,j,1,l,m]
+    for i in I
+    for j in J
+    for k in K
+    for l in L
+    for m in M
+    ]
+#a라는 리스트에 k=1일 고정한 다른 모든 종류의 결정변수를 담겠다.
 
 I_risk = {}
 J_risk = {}
 K_risk = {}
 L_risk = {}
 M_risk = {}
-N_risk = {}
-
