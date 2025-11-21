@@ -251,3 +251,5 @@ if solution:
     print("Optimal objective value (총 수용 환자 수):", solution.objective_value)
 else:
     print("해를 찾지 못했습니다.")
+
+   
